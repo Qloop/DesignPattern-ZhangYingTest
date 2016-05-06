@@ -1,7 +1,7 @@
 package com.upc.designPattern.base;
 
 /**
- *
+ *调节抽象基类
  * Created by Explorer on 2016/5/6.
  */
 public abstract class Adjust {
