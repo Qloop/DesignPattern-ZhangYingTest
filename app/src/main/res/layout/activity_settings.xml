@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_brightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="@string/brightness"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_brightness_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_brightness"
+        android:layout_toRightOf="@+id/tv_brightness"
+        android:padding="20dp"
+        android:textSize="18sp"
+        tools:text="50"/>
+
+
+    <TextView
+        android:id="@+id/tv_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_brightness"
+        android:padding="20dp"
+        android:text="@string/color"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_color_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_brightness_value"
+        android:layout_toEndOf="@+id/tv_brightness"
+        android:layout_toRightOf="@+id/tv_brightness"
+        android:padding="20dp"
+        android:textSize="18sp"
+        tools:text="50"/>
+
+    <TextView
+        android:id="@+id/tv_saturation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_color"
+        android:padding="20dp"
+        android:text="@string/saturation"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_saturation_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_color_value"
+        android:layout_toEndOf="@+id/tv_brightness"
+        android:layout_toRightOf="@+id/tv_brightness"
+        android:padding="20dp"
+        android:textSize="18sp"
+        tools:text="50"/>
+
+
+    <SeekBar
+        android:id="@+id/sb_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_saturation"
+        android:layout_marginTop="80dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <Button
+            android:id="@+id/btn_brightness"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/brightness"/>
+
+        <Button
+            android:id="@+id/btn_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/color"/>
+
+        <Button
+            android:id="@+id/btn_saturation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/saturation"/>
+    </LinearLayout>
+
+</RelativeLayout>
